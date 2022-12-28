@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initemsial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            background: linear-gradient(112.53deg, rgba(93, 17, 255, 0.96) 0.49%, rgba(255, 0, 102, 0.96) 100%);
+        }
+
+        .container {
+            /* positemsion: absolute;
+            width: 672px;
+            height: 749px;
+            left: 420px;
+            top: 117px; */
+            width: 500px;
+
+            background: rgb(247 83 220 / 90%);
+            box-shadow: 0px 4px 20px #8A8A8A;
+            border-radius: 20px;
+        }
+
+        h2 {
+            margin-top: 30px;
+            text-align: center;
+            color: #000000dd;
+        }
+
+        form {
+            margin-top: 35px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .items {
+            margin: 10px 0;
+        }
+
+        .labl {
+            text-align: left;
+        }
+
+        .inp {
+            height: 30px;
+            width: 375px;
+            text-align: center;
+            outline: none;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .btn {
+            height: 36px;
+            width: 98px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+            cursor: pointer;
+            margin-bottom: 10px;
+            font-weight: 600;
+            background-color: #000000;
+            color: #ffffff;
+            letter-spacing: 1.1px;
+        }
+
+        .btn:hover {
+            background: #5100ff;
+            color: white;
+            box-shadow: 0px 4px 20px #8A8A8A;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <h2>FILL UP THIS FORM</h2>
+        <form action="/submit" method="POST">
+            <div class="items">
+                <input type="text" name="name" placeholder="Enter your Name" class="inp">
+            </div>
+            <div class="items">
+                <input type="number" name="age" placeholder="Enter your Age" class="inp">
+            </div>
+            <div class="items">
+                <input type="email" name="email" placeholder="Enter your Email" class="inp">
+            </div>
+            <div class="items">
+                <input type="number" name="phone" placeholder="Enter your Phone no" class="inp">
+            </div>
+            <div class="items">
+                <input type="submit" value="SUBMIT" class="btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
